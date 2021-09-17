@@ -18,9 +18,9 @@ const PokeLibrary = () => {
     const [showData, setShowData] = useState(false);
     const [score, setScore] = useState(0);
     const [hiddenPokemon, setHiddenPokemon] = useState(null);
-    const [playingWin, toggleWin] = useAudio("/win.wav")
-    const [playingError, toggleError] = useAudio("/error.wav")
-    const [playingBackground, toggleBackground, enableloop] = useAudio("/background.wav")
+    const [playingWin, toggleWin] = useAudio("https://s3.us-west-2.amazonaws.com/rodrigo.cdn/win.wav")
+    const [playingError, toggleError] = useAudio("https://s3.us-west-2.amazonaws.com/rodrigo.cdn/error.wav")
+    const [playingBackground, toggleBackground, enableloop] = useAudio("https://s3.us-west-2.amazonaws.com/rodrigo.cdn/background.wav")
 
     useEffect(() => {
         getData();
